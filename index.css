@@ -1,0 +1,57 @@
+.MainContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+#kbrand {
+  width: 10%;
+}
+#ksearch {
+  width: 55%;
+}
+#ksearchbar {
+  width: 90%;
+  border-radius: 25px;
+}
+.knotnav {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(196, 184, 184);
+  display: flex;
+  flex-direction: row-reverse;
+}
+.ksidebar {
+  height: 100%;
+  width: 20%;
+  background-color: rgb(85, 81, 81);
+}
+.knotsidebar {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.kcategories {
+  height: 6%;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  flex-direction: row;
+  background-color: rgb(230, 225, 225);
+  overflow: auto;
+}
+.kcategories::-webkit-scrollbar {
+  display: none;
+}
+.kcategories button {
+  margin-right: 5px;
+}
+.knotcategories {
+  background-color: #fff;
+  height: 94%;
+  width: 100%;
+  overflow: auto;
+}

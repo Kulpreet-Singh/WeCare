@@ -85,7 +85,7 @@
       </nav>
       <div class="knotnav">
         <div class="ksidebar"></div>
-        <div class="knotsidebar">
+        <div class="knotsidebar" id="main">
           <div class="kcategories">
             <div class="container-fluid" id="kcategories">
               <button type="button" class="btn btn-outline-secondary">
@@ -130,35 +130,40 @@
             </div>
           </div>
           <div class="knotcategories">
+            <div
+              id="mySidenav"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            >
+              <a href="#" id="about" onclick="openNav()">Sign Up</a>
+            </div>
+            <div id="mySidenav1" class="sidenav">
+              <a href="#" style="margin-top: -50px;color: #fff"
+                ><strong>WeCare</strong></a
+              >
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
 
-             <div id="mySidenav"  data-toggle="modal" data-target="#exampleModalCenter">
-  <a href="#" id="about"onclick="openNav()">Sign Up</a>
-</div>        
-                      <div id="mySidenav1" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Clients</a>
+              <a href="#">Contact</a>
+            </div>
 
-<script>
-function openNav() {
-  document.getElementById("mySidenav1").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
+            <script>
+              function openNav() {
+                document.getElementById("mySidenav1").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+              }
 
-function closeNav() {
-  document.getElementById("mySidenav1").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
-
-
-
+              function closeNav() {
+                document.getElementById("mySidenav1").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+              }
+            </script>
 
             <div class="kmainarea">
-
               <div class="kmaincards"></div>
               <div class="kmaincards"></div>
               <div class="kmaincards"></div>
@@ -170,92 +175,116 @@ function closeNav() {
 
             <div class="kmainarea">
               <div class="container-fluid">
+                <div class="card" style="width: 12rem;">
+                  <div id="a">
+                    <img
+                      src="1.png"
+                      style="width: 50px;height:50px"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <div id="know">
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
 
-  
-<div class="card" style="width: 12rem;">
- <div id="a">
-  <img  src="1.png" style="width: 50px;height:50px" class="card-img-top" alt="...">
- </div>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <div id="know">
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>  
+                <div class="card" style="width: 12rem;">
+                  <div id="a">
+                    <img
+                      src="ARPIT.jpg"
+                      style="width: 50px;height:50px;border-radius: 50%"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <div id="know">
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
 
+                <div class="card" style="width: 12rem;">
+                  <div id="a">
+                    <img
+                      src="1.png"
+                      style="width: 50px;height:50px"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <div id="know">
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
 
-<div class="card" style="width: 12rem;">
-  <div id="a">
-  <img  src="ARPIT.jpg"  style="width: 50px;height:50px;border-radius: 50%" class="card-img-top" alt="...">
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  <div id="know">
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div> 
+                <div class="card" style="width: 12rem;">
+                  <div id="a">
+                    <img
+                      src="1.png"
+                      style="width: 50px;height:50px"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <div id="know">
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
 
-
-
-<div class="card" style="width: 12rem;">
- <div id="a">
-  <img  src="1.png" style="width: 50px;height:50px" class="card-img-top" alt="...">
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <div id="know">
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-
-<div class="card" style="width: 12rem;">
- <div id="a">
-  <img  src="1.png" style="width: 50px;height:50px" class="card-img-top" alt="...">
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <div id="know">
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="card" style="width: 12rem;">
- <div id="a">
-  <img  src="1.png"  style="width: 50px;height:50px"class="card-img-top" alt="...">
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-   <div id="know">
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-
-
-
-</div>  
-
+                <div class="card" style="width: 12rem;">
+                  <div id="a">
+                    <img
+                      src="1.png"
+                      style="width: 50px;height:50px"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <div id="know">
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -276,4 +305,3 @@ function closeNav() {
     ></script>
   </body>
 </html>
-  

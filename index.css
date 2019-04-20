@@ -7,10 +7,10 @@
   /* overflow: hidden; */
 }
 #kbrand {
-  width: 10%;
+  width: 16.5%;
 }
 #ksearch {
-  width: 55%;
+  width: 45%;
 }
 #ksearchbar {
   width: 90%;
@@ -92,62 +92,68 @@
   margin-bottom: 3vh;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   background-color: #fff;
-  transition:transform 0.3; 
+  transition: transform 0.3;
 }
 
-.container-fluid{
+.container-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 
-    display: flex;
-    flex-direction: row;
-   justify-content: center;
-   flex-wrap: wrap;
- 
-padding: 5px;}
-
-
-
-.card{ 
-    margin: 10px;
-    padding:5px;
-    transition: transform 0.3s;
+  padding: 5px;
 }
 
-.card:hover{transform:scale(1.06); }
-.card-title{ display: flex;
-    justify-content: center;}
-
-.card-text{ display: flex;
-    justify-content: center;}
-
-
-
-#know{display: flex;
-      justify-content: center;}
-
-#a{display: flex;
-
-justify-content: center;
+.card {
+  margin: 10px;
+  padding: 5px;
+  transition: transform 0.3s;
 }
 
+.card:hover {
+  transform: scale(1.06);
+}
+.card-title {
+  display: flex;
+  justify-content: center;
+}
 
-#mySidenav a { transform : rotate(-90deg);
+.card-text {
+  display: flex;
+  justify-content: center;
+}
+
+#know {
+  display: flex;
+  justify-content: center;
+}
+
+#a {
+  display: flex;
+
+  justify-content: center;
+}
+
+#mySidenav a {
+  transform: rotate(-90deg);
   position: absolute; /* Position them relative to the browser window */
   left: -100px; /* Position them outside of the screen */
   transition: 0.3s; /* Add transition on hover */
   padding: 15px;
   padding-top: 70px;
-  padding-left: 20px;  /* 15px padding */
+  padding-left: 20px; /* 15px padding */
   width: 120px;
   height: 150px; /* Set a specific width */
   text-decoration: none; /* Remove underline */
   font-size: 20px; /* Increase font size */
   color: white; /* White text color */
-  border-radius: 0 5px 5px 0; 
-  text-align:bottom;/* Rounded corners on the top right and bottom right side */
-z-index: 5;
-
+  border-radius: 0 5px 5px 0;
+  text-align: bottom; /* Rounded corners on the top right and bottom right side */
+  z-index: 5;
 }
-#mySidenav1 a {z-index: 7;}
+#mySidenav1 a {
+  z-index: 7;
+}
 
 #mySidenav a:hover {
   left: 0; /* On mouse-over, make the elements appear as they should */
@@ -156,16 +162,14 @@ z-index: 5;
 /* The about link: 20px from the top with a green background */
 #about {
   top: 400px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
-
-
 
 .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 8;
   top: 0;
   left: 0;
   background-color: #111;
@@ -196,11 +200,15 @@ z-index: 5;
 }
 
 #main {
-  transition: margin-left .5s;
-  padding: 16px;
+  transition: margin-left 0.5s;
+  padding: 0px;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }

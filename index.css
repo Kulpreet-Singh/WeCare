@@ -92,4 +92,39 @@
   margin-bottom: 3vh;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   background-color: #fff;
+  transition:transform 0.3; 
+}
+
+.container-fluid{
+
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+ 
+padding: 5px;}
+
+
+
+.card{ 
+    margin: 10px;
+    padding:5px;
+    transition: transform 0.3s;
+}
+
+.card:hover{transform:scale(1.06); }
+.card-title{ display: flex;
+    justify-content: center;}
+
+.card-text{ display: flex;
+    justify-content: center;}
+
+
+
+#know{display: flex;
+      justify-content: center;}
+
+#a{display: flex;
+
+justify-content: center;
 }

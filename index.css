@@ -43,33 +43,53 @@
   flex-direction: row;
   background-color: rgb(252, 252, 252);
   overflow: auto;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .kcategories::-webkit-scrollbar {
   display: none;
 }
 .kcategories button {
   margin-right: 5px;
+  height: 100%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+#kcategories {
+  padding-top: 1vh;
 }
 .knotcategories {
   background-color: #fff;
   height: 90%;
   width: 100%;
   padding: 2%;
+  padding-top: 0%;
   overflow: auto;
+}
+.knotcategories::-webkit-scrollbar {
+  display: none;
 }
 .kmainarea {
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  /* display: flex; */
+  /* flex-direction: column; */
+  overflow: auto;
+  margin-bottom: 6vh;
   padding: 2%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   background-color: rgb(224, 217, 217);
 }
+.kmainarea::-webkit-scrollbar {
+  display: none;
+}
 .kmaincards {
-  height: 20%;
+  height: 30%;
   width: 100%;
+  overflow: auto;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 3vh;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   background-color: #fff;
 }
